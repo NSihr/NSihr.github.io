@@ -8,9 +8,30 @@
     <link rel="stylesheet" href="weather.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+    <script>
+var Geo={};
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(success,error);
+}
+else {
+alert('Geolocation is not supported');
+}
+function error() {
+alert("That's weird! We couldn't find you!");
+}
+function success(position) {
+      Geo.lat = position.coords.latitude;
+      Geo.lng = position.coords.longitude;}
+var key = ='7d12cece9d9ebfc01d05cbd4d18cc961’;
+var Weather =(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${key}`)
         
-
+$.ajax({
+url : Weather,
+dataType : "jsonp",
+success : function(data) {
+// get all the information
+}
+});
     <title>NSihr|Weather</title>
 </head>
 <body >
