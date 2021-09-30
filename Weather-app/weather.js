@@ -50,7 +50,11 @@ function showWeatherData (data){
     countryEl.innerHTML = data.lat + 'N ' + data.lon+'E'
 
     currentWeatherItemsEl.innerHTML = 
-    `<div class="weather-item">
+    <div class="weather-item">
+        <div>Temperature</div>
+        <div>${feels_like}%</div>
+    </div>
+   `<div class="weather-item">
         <div>Humidity</div>
         <div>${humidity}%</div>
     </div>
