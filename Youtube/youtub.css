@@ -61,6 +61,7 @@ body{
     width: 50%;
     height: 35px;
     display: flex;
+    margin-left: 90px;
 }
 
 .search-bar{
