@@ -6,11 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>NSihr|ELIB|NCERT|HOME</title>
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="elibstyle.css" />
   <link rel="stylesheet" href="eemobile-style.css">
   <link rel="icon" href="20210923_100238.jpg" sizes="16x16" type="image/png">
@@ -127,6 +134,42 @@
           </p>
         </div>
         <p class="hi">Hi</p>
+        
+        
+          <button class="share-btn">
+              <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="share-container"></div>
+          <div class="share-options">
+              <p class="title">share</p>
+              <div class="social-media">
+                  
+               
+                  <a href="#"class="social-media-btn" id="facebook-btn">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+            
+                  <a href="#"class="social-media-btn" id="twitter-btn">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+            
+              
+            
+                  <a href="#" class="social-media-btn" id="linkedin-btn">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+            
+                  <a href="#" class="social-media-btn" id="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+              </div>
+              <div class="link-container">
+                  <p id="link_" class="link">https://nsihr.github.io/Ncert/elibindex.html</p>
+                  <button id="copy-btn" onclick="copyToClipboard('#link_')" class="copy-btn">copy</button>
+              </div>
+          </div>
+    
+      </div>
          
   </header>
   <main>
@@ -331,6 +374,9 @@
       </div>
     </div>
   </footer>
+    <button id="btnScrollToTop"> 
+  <i class="material-icons">arrow_upward</i>
+</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
