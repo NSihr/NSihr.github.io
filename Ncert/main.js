@@ -52,3 +52,73 @@ let nCount = selector => {
     }
   });
   
+
+  const shareBtn = document.querySelector('.share-btn');
+const shareOptions = document.querySelector('.share-options');
+
+shareBtn.addEventListener('click', () => {
+    shareOptions.classList.toggle('active');
+})
+
+
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert('Copied');
+}
+
+
+const facebookBtn = document.querySelector("#facebook-btn");
+const twitterBtn = document.querySelector("#twitter-btn");
+
+const linkedinBtn = document.querySelector("#linkedin-btn");
+const whatsappBtn = document.querySelector("#whatsapp-btn");
+
+function init() {
+  
+
+  let postUrl = "https://nsihr.github.io/Ncert/elibindex.html";
+  let postTitle = encodeURI("Hi everyone, please check this amazing website out: ");
+  
+
+  facebookBtn.setAttribute(
+    "href",
+    `https://www.facebook.com/sharer.php?u=${postUrl}`
+  );
+
+  twitterBtn.setAttribute(
+    "href",
+    `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
+  );
+
+ 
+
+  linkedinBtn.setAttribute(
+    "href",
+    `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`
+  );
+
+  whatsappBtn.setAttribute(
+    "href",
+    `https://wa.me/?text=${postTitle} ${postUrl}`
+  );
+}
+
+init();
+
+
+
+const btnScrollToTop = document.querySelector('#btnScrollToTop');
+
+btnScrollToTop.addEventListener("click" , function() {
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+});
